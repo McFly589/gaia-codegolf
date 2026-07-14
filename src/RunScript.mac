@@ -2,6 +2,17 @@ ROUTINE RunScript
 	#; We will run this routine to do the benchmark
 Run()
 	#; extract files if necessary from .data/in to .data/temp
+	
+	do ##class(%File).CreateDirectoryChain("/home/irisowner/dev/data/temp")
+	do ##class(%File).CreateDirectoryChain("/home/irisowner/dev/data/out")
+
+	set wfile="/home/irisowner/dev/data/in/*.gz"
+	for  {
+		set file=$zsearch(wfile),wfile=""  quit:file=""
+		set out="/home/irisowner/dev/data/temp/"_$e($p(file,"/",$l(file,"/")),1,*-3)
+		write out,!
+		do $zf(-100,"/STDOUT="""_out_"""/STDERR="""_out_"""","gzip","-dc",file)
+	}
 
 	#; Start time
 	Set startTime = $ZHOROLOG
