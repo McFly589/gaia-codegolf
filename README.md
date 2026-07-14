@@ -11,10 +11,9 @@ Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installi
 
 # Build
 
-Clone the repository
+Create a directory and run the following command from inside it:
 
 ```bash
-cd myfolder
 git clone https://github.com/McFly589/Gaia-CodeGolf.git .
 ```
 
