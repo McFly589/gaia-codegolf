@@ -25,9 +25,13 @@ docker-compose up --build -d
 
 ## Run the solution
 
-Build the project in Docker container and run the following in IRIS terminal:
+Build the project in Docker container:
 
 ```
-$ docker-compose exec iris iris session iris
-USER>do ^RunScript
+docker-compose exec iris iris session iris
+```
+
+And finally, call the routine:
+```
+do ^RunScript
 ```
