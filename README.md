@@ -14,7 +14,7 @@ Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installi
 Create a directory and run the following command from inside it:
 
 ```bash
-git clone https://github.com/McFly589/Gaia-CodeGolf.git .
+git clone https://github.com/McFly589/gaia-codegolf.git .
 ```
 
 Start up the Docker container:
