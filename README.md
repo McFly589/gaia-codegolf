@@ -3,7 +3,7 @@
 Here you have my contribution to the contest [Employee Programming Challenge #1] (https://openexchange.intersystems.com/contest/47).
 
 The script has only one line of ObjectScript code.  
-It's not very quick but it has only 331 characters, good for the Code Golf nomination *<8-)
+It's not very quick but it has only 318 characters, good for the Code Golf nomination *<8-)
 
 ## Prerequisites
 
