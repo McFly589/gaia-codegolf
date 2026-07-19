@@ -18,7 +18,7 @@ Run()
 	#; - processes data
 	#; - creates output file in .data/out
 
-	s w="/t/*",o="/o/r.csv",c=",",S="]"",""[",X="(n,A,p)s (a,p)=0,i=9e8,l=$p(L,S,n) f x=1:1:$l(l,c){s v=$p(l,c,x) i $num(v) s:v>a a=v s:v<i i=v} s:a p=a-i/i*100,A=i_c_a" o o:"WN" u o f{s f=$zse(w),w="" q:f=""  o f f{u f r L#6e4 q:$zeof  i $e(L,1)?1n{x (X,9,.B,.Q),(X,14,.R,.P) s:Q>P P=Q i P>100 u o w $p(L,c,2)_c_B_c_R_c_P,!}} c f} c o
+	s w="/t/*",o="/o/r",c=",",S="]"",""[",X="(n,A,p)s (a,p)=0,i=9e8,l=$p(L,S,n) f x=1:1:$l(l,c){s v=$p(l,c,x) i $num(v) s:v>a a=v s:v<i i=v} s:a p=a-i/i*100,A=i_c_a" o o:"W" u o f{s f=$zse(w),w="" q:f=""  o f f{u f r L#6e4 q:$zeof  i +L{x (X,9,.B,.Q),(X,14,.R,.P) s:Q>P P=Q i P>100 u o w $p(L,c,2)_c_B_c_R_c_P,!}} c f} c o
 	
 	#; End time
 	Set endTime = $ZHOROLOG
