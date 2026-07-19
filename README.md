@@ -66,7 +66,7 @@ USER>
 ```
 
 ## Result
-Results are saved into /home/irisowner/dev/data/out/r.csv  
+Results are saved into /home/irisowner/dev/data/out/r  
 File has 57,099 entries
 ```
 $ 
@@ -74,9 +74,9 @@ $ pwd
 /home/irisowner/dev/data/out
 $ ls -l
 total 6316
--rwxr-xr-x 1 irisowner irisowner 6464588 Jul 16 21:45 r.csv
-$ wc -l r.csv
-57099 r.csv
+-rwxr-xr-x 1 irisowner irisowner 6464588 Jul 16 21:45 r
+$ wc -l r
+57099 r
 $
 ```
 
